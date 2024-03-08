@@ -6,7 +6,8 @@ public class Book {
     int id;
     String genre;
     int quantity;
-
+    int[][] codes= new int[10][5];
+    
     public Book(String title, int id, String genre, int quantity) {
         this.title = title;
         this.id = id;
