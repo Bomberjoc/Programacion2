@@ -42,9 +42,10 @@ public class Ejercicios {
         System.out.println("2. Entregar un libro");
         System.out.println("3. Verificar que libros he pedido");
         System.out.println("4. Salir");
-        int a=cap.nextInt();
+        int a=0;
+        a=cap.nextInt();
         switch (a){
-            case 1:
+            case 1 -> {
                 System.out.println("Escriba el código del libro que desea");
                 int c=cap.nextInt();
                 boolean b=false;
@@ -57,7 +58,7 @@ public class Ejercicios {
                         count = 0;
                         b=true;
                         if(x>0){
-                            System.out.println("Ingrese su código");
+                            System.out.println("Ingrese su código 1");
                             code=cap.nextInt();
                             people[0].setCode(code);
                             System.out.println("Ingrese su Nombre y Apellido");
@@ -94,13 +95,13 @@ public class Ejercicios {
                         }
                     }
                 }
-                break;
-            case 2:
+            }
+            case 2 -> {
                 int countid=0;
                 int countcode=0;
                 System.out.println("Ingrese la id del libro que desea entregar");
                 int ide=cap.nextInt();
-                System.out.println("Ingrese su código");
+                System.out.println("Ingrese su código 2");
                 code=cap.nextInt();
                 int vecprueba []=people[0].getId_books();
                 for(int i:vecprueba){
@@ -127,13 +128,22 @@ public class Ejercicios {
                         menu(inventory, people);
                     }
                 }
-                
-                break;
+            }
 
-            case 3:
-                
-                break;
-            default:
+            case 3 -> {
+                int codver;
+                System.out.println("Ingrese su código 3");
+                codver=cap.nextInt();
+                if(codver==people[0].getCode()){
+                    int [] idver=people[0].getId_books();
+                    for(int revi=0;revi>idver.length;revi++){
+                        System.out.println(idver[revi]);
+                        System.out.println("Hola1");
+                    }
+                }
+            }
+            default -> {
+            }
         }
         
     }

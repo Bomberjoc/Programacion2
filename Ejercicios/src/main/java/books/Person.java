@@ -4,7 +4,7 @@ package books;
 public class Person {
     String name;
     int code;
-    int id_books []= new int[3];
+    int id_books []= {0,0,0};
     int id_date []= new int[3];
 
     public Person(String name, int code) {
