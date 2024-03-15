@@ -7,7 +7,7 @@ public class Poo {
         homero.greeting();
         System.out.println(homero.getAge());
         Character bart=new Character("Bartolomeo","Vago",10,"Ay Caramba");
-        barth.setPhrase("Ayyy Caramba!!");
+        bart.setPhrase("Ayyy Caramba!!");
         bart.greeting();
         
     }   
