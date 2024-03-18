@@ -1,6 +1,6 @@
 
-package person;
-import values.CustomerRole;
+package com.mycompany.restaurant.person;
+import com.mycompany.restaurant.values.CustomerRole;
 
 public class Customer {
     CustomerRole role;
