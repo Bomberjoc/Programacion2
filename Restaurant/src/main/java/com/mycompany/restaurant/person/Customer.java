@@ -16,17 +16,15 @@ public class Customer {
     public Customer() {
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public CustomerRole getRole() {
+        return role;
+    }
     
     
-    public void sayMenu(){
-        
-    }
-    public void buyFood(){
-        
-    }
-    public void cancelBuy(){
-        
-    }
     public void sellFood(){
         if(this.role!= CustomerRole.ADMINISTRATIVE){
             System.out.println("Qué se le perdió?");

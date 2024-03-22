@@ -22,12 +22,12 @@ public class Menu {
         this.dishlist.add(dish);
     }
     
-    public ArrayList<String> getDishesPerType(DishType dishType){
+    public ArrayList<String> getDishesPerType(DishType dishType, String id){
         ArrayList<String> foundDishes=new ArrayList<>();
         
         for(Dish dish:dishlist){
             if(dish.getType()==dishType){
-                foundDishes.add(" |"+dish.getName() +" : "+ dish.getIngredients());
+                foundDishes.add(" |"+dish.getName() +" : "+ dish.getIngredients() + " - "+ dish.getPrice(getPricePerRole(id))+"$" +"\n");
             }
         }
         
