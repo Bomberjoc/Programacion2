@@ -27,7 +27,7 @@ public class Menu {
         
         for(Dish dish:dishlist){
             if(dish.getType()==dishType){
-                foundDishes.add(dish.getName());
+                foundDishes.add(" |"+dish.getName() +" : "+ dish.getIngredients());
             }
         }
         

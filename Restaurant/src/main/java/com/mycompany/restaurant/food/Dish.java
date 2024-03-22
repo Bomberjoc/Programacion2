@@ -28,6 +28,14 @@ public class Dish {
     public String getName() {
         return name;
     }
+
+    public String getIngredients() {
+        return ingredients;
+    }
+
+    public void setIngredients(String ingredients) {
+        this.ingredients = ingredients;
+    }
     
     
 }
